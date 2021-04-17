@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script defer src="./js/script.js"></script>
     <title>Document</title>
 </head>
 <body>
-    <header id="title">Online Calculator</header>
+    <header class="title">Online Calculator</header>
     <p class="opener">This is an online calculator that allows you to perform simple mathematical functions</p>
     <form name="calculator">
         <table>
-            <tr class="display-bar">
-                <th>GA</th>
-               <th><input type="text" id="inputbox" name="input"></th>
-            </tr>
-            <tr class="row1">
-                <th><button>7</button></th>
-                <th><button>8</button></th>
-                <th><button>4</button></th>
-                <th><button>/</button></th>
-            </tr>
-            <tr class="row2">
-                <th><button>4</button></th>
-                <th><button>5</button></th>
-                <th><button>6</button></th>
-                <th><button>x</button></th>
-            </tr>
-            <tr class=row3>
-                <th><button>1</button></th>
-                <th><button>2</button></th>
-                <th><button>3</button></th>
-                <th><button>-</button></th>
-            </tr>
-            <tr class="row4">
-                <th><button>0</button></th>
-                <th><button>.</button></th>
-                <th><button>+</button></th>
-                <th><button>=</button></th>
-            </tr>
+            <!-- <tr>
+               <input type="text" id="myText">
+            </tr> -->
+            <div id="mathFunctions">
+                <form>
+                    <tr>
+                        <input type="text" placeholder="Enter value" id="myText">
+                    </tr>
+                </form>
+                <tr class="row1">
+                    <th><button type="button" id="num" class="seven" value=7>7</button></th>
+                    <th><button type="button" id="num" class="eight" value=8>8</button></th>
+                    <th><button type="button" id="num" class="nine" value=9>9</button></th>
+                    <th><button type="button" id="num" class="divide" value= / >/</button></th>
+                </tr>
+                <tr class="row2">
+                    <th><button type="button" id="num" class="eight" value=4>4</button></th>
+                    <th><button type="button" id="num" class="seven" value=5>5</button></th>
+                    <th><button type="button" id="num" class="six" value=6>6</button></th>
+                    <th><button type="button" id="num" class="multiply" value=*>x</button></th>
+                </tr>
+                <tr class=row3>
+                    <th><button type="button" id="num" class="one" value=1>1</button></th>
+                    <th><button type="button" id="num" class="two" value=2>2</button></th>
+                    <th><button type="button" id="num" class="three" value=3>3</button></th>
+                    <th><button type="button" id="num" class="four" value=->-</button></th>
+                </tr>
+                <tr class="row4">
+                    <th><button type="button" id="num" class="zero" value=0>0</button></th>
+                    <th><button type="button" id="num" class="decimal" value=.>.</button></th>
+                    <th><button type="button" id="num" class="plus" value="+">+</button></th>
+                    <th><button type="submit" id="equal" class="equal">=</button></th>
+                </tr>
+            </div>
+            <!-- <tr>
+                <th><button class="clear">clear</button></th>
+            </tr> -->
         </table>
     </form>
 </body>
