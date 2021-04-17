@@ -3,7 +3,7 @@
 const $button = $("button");
 const $equal = $("#equal");
 const $input = $("#myText");
-
+const $reset = $("#reset");
 
 // This function renders a clicked button's value to input field
 
@@ -22,6 +22,9 @@ $equal.click(function(){
     $input.val($input.val() + aResult);
 });
 
-
+// this function clears/resets all input values from the input field
+$reset.click(function(){
+    $input.val('');
+});
 
 

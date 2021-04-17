@@ -28,8 +28,20 @@ button{
     padding: 0px;
     height: 70px;
     width: 70px;
-    font-family:cursive
+    font-family:cursive;
+    border-radius: 5px;
+    box-shadow: 0 9px #999;
 
+}
+
+button:hover {
+    background-color: bisque;
+}
+
+button:active {
+    background-color: rgb(221, 184, 103)55, 255);
+    box-shadow: chocolate;
+    transform: translateX(2px);
 }
 
 input{
@@ -43,4 +55,8 @@ input{
 
 .clear{
     width: 249px;
+}
+
+#reset {
+    text-align: center;
 }
