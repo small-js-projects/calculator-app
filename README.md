@@ -7,3 +7,6 @@
 * JQuery
 * HTML
 * CSS
+
+### Getting Started
+[Click here]( https://small-js-projects.github.io/calculator-app/) to get started
